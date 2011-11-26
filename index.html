@@ -63,7 +63,7 @@ jQuery.fn.liveUpdate = function(list) {
     var cache = rows.map(function() {
 		return $(this)[0].innerText.toLowerCase().replace("->",' ').replace("$",'');
     });
-    console.log( cache );	
+    //console.log( cache );	
     this
       .keyup(filter).keyup()
       .parents('form').submit(function() {
